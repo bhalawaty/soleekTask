@@ -57,8 +57,8 @@ class User extends Authenticatable implements JWTSubject
         return [];
     }
 
-    public function countries()
-    {
-        return $this->hasMany(Country::class);
-    }
+//    public function countries()
+//    {
+//        return $this->hasMany(Country::class);
+//    }
 }

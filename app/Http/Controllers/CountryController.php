@@ -1,6 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+
+//use App\Country;
+//use App\User;
+
 class CountryController extends Controller
 {
     protected $user;
@@ -12,5 +16,7 @@ class CountryController extends Controller
         $request = $client->get('https://api.printful.com/countries');
         $response = $request->getBody();
         return $response;
+
+
     }
 }
